@@ -1,13 +1,11 @@
 import React from 'react';
 import { MotionConfig } from 'framer-motion';
 import { render } from 'react-dom';
-import { I18nextProvider } from 'react-i18next';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import App from './components/App';
 import ErrorBoundary from './ErrorBoundary';
 import reportWebVitals from './reportWebVitals';
-import { instance } from './services/i18n';
 import { transition } from './styles/config/framer';
 import { theme } from './styles/config/theme';
 import GlobalStyle from './styles/GlobalStyles';
@@ -17,7 +15,6 @@ const GlobalProviders = combineProviders([
 	[BrowserRouter],
 	[ThemeProvider, { theme }],
 	[MotionConfig, { transition }],
-	[I18nextProvider, { i18n: instance }],
 ]);
 
 render(
