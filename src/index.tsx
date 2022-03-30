@@ -6,7 +6,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import App from './components/App';
 import ErrorBoundary from './ErrorBoundary';
-import { GlobalStoreProvider } from './GlobalStore';
 import reportWebVitals from './reportWebVitals';
 import { instance } from './services/i18n';
 import { transition } from './styles/config/framer';
@@ -16,7 +15,6 @@ import { combineProviders } from './utils/combineProviders';
 
 const GlobalProviders = combineProviders([
 	[BrowserRouter],
-	[GlobalStoreProvider],
 	[ThemeProvider, { theme }],
 	[MotionConfig, { transition }],
 	[I18nextProvider, { i18n: instance }],

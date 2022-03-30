@@ -1,9 +1,7 @@
 import { ReactElement, useCallback, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { observer } from 'mobx-react-lite';
 import { z } from 'zod';
 import { Modal as ModalEnum } from '../../../constants/modal';
-import { useGlobalStore } from '../../../GlobalStore';
 import { useForm } from '../../../hooks/useForm';
 import { useModal } from '../../../hooks/useModal';
 import { Path } from '../../../routes/Path';
@@ -42,9 +40,8 @@ const ColorPalette = (): ReactElement => {
 	return <Flex flexWrap="wrap">{colors}</Flex>;
 };
 
-export const Styleguide = observer((): ReactElement => {
+export const Styleguide = (): ReactElement => {
 	const [formData, setFormData] = useState<string>('');
-	const store = useGlobalStore();
 	const form = useForm({
 		schema,
 	});
@@ -129,19 +126,7 @@ export const Styleguide = observer((): ReactElement => {
 						{formData && <Paragraph>Submitted data: {formData}</Paragraph>}
 					</Form>
 				</StyledBlock>
-				<Heading type={HeadingType.H2}>Store:</Heading>
-				<StyledBlock>
-					<Heading data-testid="count" type={HeadingType.H5}>
-						{store.count}
-					</Heading>
-					<Button data-testid="increment" onClick={store.increment}>
-						+
-					</Button>
-					<Button data-testid="decrement" onClick={store.decrement}>
-						-
-					</Button>
-				</StyledBlock>
 			</Container>
 		</Page>
 	);
-});
+};
