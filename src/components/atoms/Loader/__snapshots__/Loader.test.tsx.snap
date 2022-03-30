@@ -2,22 +2,22 @@
 
 exports[`Loader should render correctly 1`] = `
 <div
-  className="sc-bdvvtL gmjVVj"
+  className="sc-bczRLJ dVNMRw"
   data-testid="Loader"
 >
   <svg
-    className="sc-gsDKAQ jFnIrH"
+    className="sc-gsnTZi Dpegn"
     height={60}
     width={60}
   >
     <circle
-      className="sc-dkPtRN sc-hKwDye ukfDZ jYvwyS"
+      className="sc-dkzDqf sc-hKMtZM exNUlu gwUwEt"
       cx={30}
       cy={30}
       r={18}
     />
     <circle
-      className="sc-dkPtRN sc-eCImPb ukfDZ jHkNDk"
+      className="sc-dkzDqf sc-eCYdqJ exNUlu dcvWlS"
       cx={30}
       cy={30}
       r={18}

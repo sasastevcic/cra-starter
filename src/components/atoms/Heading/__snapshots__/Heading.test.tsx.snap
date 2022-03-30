@@ -2,7 +2,7 @@
 
 exports[`Heading Render should render correctly 1`] = `
 <h1
-  className="sc-bdvvtL cruLuU"
+  className="sc-bczRLJ bTDTrv"
   data-testid="Heading"
 >
   Heading

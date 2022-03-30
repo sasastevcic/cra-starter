@@ -2,7 +2,7 @@
 
 exports[`Input should render correctly 1`] = `
 <input
-  className="sc-bdvvtL bgUsov"
+  className="sc-bczRLJ hrPSHM"
   data-testid="Input"
   type="text"
 />
@@ -10,7 +10,7 @@ exports[`Input should render correctly 1`] = `
 
 exports[`Input should render type number correctly 1`] = `
 <input
-  className="sc-bdvvtL bgUsov"
+  className="sc-bczRLJ hrPSHM"
   data-testid="Input"
   type="number"
 />

@@ -2,7 +2,7 @@
 
 exports[`Page Render should render correctly 1`] = `
 <div
-  className="sc-bdvvtL bnvdvH"
+  className="sc-bczRLJ ljkdgA"
   data-testid="Page"
 />
 `;

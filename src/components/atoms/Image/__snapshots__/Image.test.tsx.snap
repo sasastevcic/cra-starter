@@ -2,15 +2,15 @@
 
 exports[`Image Render should render correctly 1`] = `
 <div
-  className="sc-bdvvtL fZsoEr"
+  className="sc-bczRLJ ebrsDA"
   data-testid="Image"
 >
   <picture
-    className="sc-dkPtRN jCCGBe"
+    className="sc-dkzDqf iTkAXJ"
   >
     <img
       alt="background"
-      className="sc-gsDKAQ fRuqsE"
+      className="sc-gsnTZi iwRLKw"
       data-testid="ImageElement"
       src="https://picsum.photos/200"
     />
