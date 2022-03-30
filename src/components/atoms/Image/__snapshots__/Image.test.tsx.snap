@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Render should render correctly 1`] = `
+<div
+  className="sc-bdvvtL fZsoEr"
+  data-testid="Image"
+>
+  <picture
+    className="sc-dkPtRN jCCGBe"
+  >
+    <img
+      alt="background"
+      className="sc-gsDKAQ fRuqsE"
+      data-testid="ImageElement"
+      src="https://picsum.photos/200"
+    />
+  </picture>
+</div>
+`;

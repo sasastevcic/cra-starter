@@ -1,0 +1,70 @@
+{
+	"usesTypeScript": true,
+	"usesCssModule": false,
+	"cssPreprocessor": "styled-components",
+	"testLibrary": "Testing Library",
+	"component": {
+		"default": {
+			"path": "src/components",
+			"withStyle": true,
+			"withTest": true,
+			"withStory": true,
+			"withLazy": false,
+			"withIndex": true,
+			"withStoryStyle": true,
+			"customTemplates": {
+				"component": "template/component/TemplateName.tsx",
+				"style": "template/component/TemplateName.styles.tsx",
+				"story": "template/component/TemplateName.stories.tsx",
+				"storyStyle": "template/component/TemplateName.data.ts",
+				"test": "template/component/TemplateName.test.tsx",
+				"index": "template/component/index.ts"
+			}
+		},
+		"componentLazy": {
+			"path": "src/components",
+			"withStyle": true,
+			"withTest": true,
+			"withStory": true,
+			"withLazy": true,
+			"withIndex": true,
+			"withStoryStyle": true,
+			"customTemplates": {
+				"component": "template/component/TemplateName.tsx",
+				"style": "template/component/TemplateName.styles.tsx",
+				"story": "template/component/TemplateName.stories.tsx",
+				"storyStyle": "template/component/TemplateName.data.ts",
+				"test": "template/component/TemplateName.test.tsx",
+				"lazy": "template/componentLazy/TemplateName.lazy.tsx",
+				"index": "template/componentLazy/index.ts"
+			}
+		},
+		"page": {
+			"path": "src/components/pages",
+			"withStyle": false,
+			"withTest": false,
+			"withStory": false,
+			"withLazy": false,
+			"withIndex": true,
+			"withStoryStyle": false,
+			"customTemplates": {
+				"component": "template/page/TemplateName.tsx",
+				"index": "template/page/index.ts"
+			}
+		},
+		"pageLazy": {
+			"path": "src/components/pages",
+			"withStyle": false,
+			"withTest": false,
+			"withStory": false,
+			"withLazy": true,
+			"withIndex": true,
+			"withStoryStyle": false,
+			"customTemplates": {
+				"component": "template/page/TemplateName.tsx",
+				"lazy": "template/pageLazy/TemplateName.lazy.tsx",
+				"index": "template/pageLazy/index.ts"
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Render should render correctly 1`] = `
+<button
+  className="sc-bdvvtL gjPwIu"
+  data-testid="Button"
+  onClick={[Function]}
+  type="button"
+/>
+`;

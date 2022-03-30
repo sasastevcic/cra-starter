@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex Render should render correctly 1`] = `
+<div
+  className="sc-bdvvtL dABJhz"
+  data-testid="Flex"
+/>
+`;

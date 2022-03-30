@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AbstractButton should render anchor correctly 1`] = `
+<a
+  data-testid="AbstractButton"
+  href="https://www.google.com"
+  rel="noopener noreferrer"
+  target="_blank"
+/>
+`;
+
+exports[`AbstractButton should render button correctly 1`] = `
+<button
+  data-testid="AbstractButton"
+  type="button"
+/>
+`;
+
+exports[`AbstractButton should render submit button correctly 1`] = `
+<button
+  data-testid="AbstractButton"
+  type="submit"
+/>
+`;

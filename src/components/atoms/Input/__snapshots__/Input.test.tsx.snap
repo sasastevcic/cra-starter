@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render correctly 1`] = `
+<input
+  className="sc-bdvvtL bgUsov"
+  data-testid="Input"
+  type="text"
+/>
+`;
+
+exports[`Input should render type number correctly 1`] = `
+<input
+  className="sc-bdvvtL bgUsov"
+  data-testid="Input"
+  type="number"
+/>
+`;
