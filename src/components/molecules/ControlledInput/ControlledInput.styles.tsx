@@ -1,4 +1,3 @@
-import { size } from 'polished';
 import styled, { css } from 'styled-components';
 import { TransitionDuration, TransitionEase } from '../../../styles/config/variables';
 import Input from '../../atoms/Input';
@@ -6,7 +5,7 @@ import Paragraph from '../../atoms/Paragraph';
 
 export const StyledFormControl = styled.div`
 	position: relative;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -39,16 +38,11 @@ export const StyledText = styled(Paragraph)<{ $isActive: boolean }>`
 	${({ $isActive }) => $isActive && activeStyles}
 `;
 
-export const StyledError = styled.span`
+export const StyledError = styled(Paragraph)`
 	position: absolute;
-	top: 50%;
-	right: 1rem;
-	transform: translateY(-50%);
+	top: 100%;
+	left: 0;
 	color: ${({ theme }) => theme.color.red};
-
-	svg {
-		${size('1.4rem')};
-	}
 `;
 
 export const StyledInput = styled(Input)`
