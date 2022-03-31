@@ -67,13 +67,13 @@ tool wouldn’t be useful if you couldn’t customize it when you are ready for 
 Learn more about
 [Generate React CLI](https://github.com/arminbro/generate-react-cli#generate-react-cli).
 
-In order to generate lazy component, add `--type=componentLazy` as argument.\
+In order to generate lazy component, add `--type=componentLazy` as an argument.\
 `yarn generate ComponentName --type=componentLazy`
 
-In order to generate a page, add `--type=page` as argument.\
+In order to generate a page, add `--type=page` as an argument.\
 `yarn generate PageName --type=page`
 
-In order to generate lazy page, add `--type=pageLazy` as argument.\
+In order to generate a lazy page, add `--type=pageLazy` as an argument.\
 `yarn generate PageName --type=pageLazy`
 
 ## Learn More
@@ -88,7 +88,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 The structure follows [atomic design](https://bradfrost.com/blog/post/atomic-web-design/)
 guidelines.
 
-- atoms - the smallest unit, must be self contained and not dependant on any external modules.
+- atoms - the smallest unit, must be self-contained and not dependant on any external modules.
   (types and configuration being the exception)
   - `Icon`, `Paragraph`, `Heading`, `Input`, `Button`, etc...
 - molecules - must be restrained to only use atoms and minimal internal state.
