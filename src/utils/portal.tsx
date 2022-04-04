@@ -2,11 +2,11 @@ import { ReactNode, ReactPortal, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 
 interface Portal {
-	children: ReactNode;
 	portalId: string;
+	children: ReactNode;
 }
 
-const Portal = ({ children, portalId }: Portal): ReactPortal => {
+const Portal = ({ portalId, children }: Portal): ReactPortal => {
 	const portalElement = useMemo(() => document.getElementById(portalId), [portalId]);
 
 	if (!portalElement) {
