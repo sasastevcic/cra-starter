@@ -17,7 +17,7 @@ interface State<T> {
 
 type Options = Omit<AxiosRequestConfig, 'url' | 'signal'>;
 
-type SendRequest = (url: string, options?: Options) => void;
+type SendRequest = (url: string, options?: Options) => Promise<void>;
 
 type ReturnTuple<T> = [state: State<T>, sendRequest: SendRequest];
 
