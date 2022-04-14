@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import App from './components/App';
 import ErrorBoundary from './ErrorBoundary';
+import { GlobalStoreProvider } from './hooks/useGlobalStore';
 import reportWebVitals from './reportWebVitals';
 import { transition } from './styles/config/framer';
 import { theme } from './styles/config/theme';
@@ -15,6 +16,7 @@ const GlobalProviders = combineProviders([
 	[BrowserRouter],
 	[ThemeProvider, { theme }],
 	[MotionConfig, { transition }],
+	[GlobalStoreProvider],
 ]);
 
 render(
