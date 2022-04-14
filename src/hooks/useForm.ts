@@ -14,7 +14,7 @@ interface UseFormProps<T extends ZodSchema<FieldValues>> extends UseHookFormProp
 /**
  * @description a hook for handling the useHookForm
  * @returns useHookForm with a resolver and mode
- * @param scheme ZodSchema
+ * @param schema ZodSchema
  */
 export const useForm = <T extends ZodSchema<FieldValues>>({
 	schema,
