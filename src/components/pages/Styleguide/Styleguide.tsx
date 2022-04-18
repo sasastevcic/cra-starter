@@ -1,5 +1,4 @@
 import { ReactElement, useCallback, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
 import { z } from 'zod';
 import { Modal as ModalEnum } from '../../../constants/modal';
 import { useForm } from '../../../hooks/useForm';
@@ -106,13 +105,9 @@ export const Styleguide = (): ReactElement => {
 				<Heading type={HeadingType.H2}>Modal:</Heading>
 				<StyledBlock>
 					<Button onClick={() => openModal(ModalEnum.Test)}>Toggle Modal</Button>
-					<AnimatePresence>
-						{modal === ModalEnum.Test && (
-							<Modal onClose={closeModal}>
-								<Paragraph>Modal content</Paragraph>
-							</Modal>
-						)}
-					</AnimatePresence>
+					<Modal isOpen={modal === ModalEnum.Test} onClose={closeModal}>
+						<Paragraph>Modal content</Paragraph>
+					</Modal>
 				</StyledBlock>
 				<Heading type={HeadingType.H2}>Global store:</Heading>
 				<StyledBlock>

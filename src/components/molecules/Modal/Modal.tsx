@@ -9,7 +9,11 @@ import ScreenReader from '../../atoms/ScreenReader';
 import { ModalProps } from './Modal.data';
 import { StyledCloseButton, StyledModal } from './Modal.styles';
 
-export const Modal = ({ onClose, children, ...props }: ModalProps): ReactElement => {
+export const Modal = ({
+	onClose,
+	children,
+	...props
+}: Omit<ModalProps, 'isOpen'>): ReactElement => {
 	const modalRef = useRef<HTMLDivElement>(null);
 
 	useScrollLock(true);

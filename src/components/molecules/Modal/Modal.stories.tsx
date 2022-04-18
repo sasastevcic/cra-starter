@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { AnimatePresence } from 'framer-motion';
 import { Modal as ModalEnum } from '../../../constants/modal';
 import { useModal } from '../../../hooks/useModal';
 import Button from '../../atoms/Button';
@@ -16,9 +15,7 @@ const Template: ComponentStory<typeof ModalComponent> = (args) => {
 	return (
 		<>
 			<Button onClick={() => openModal(ModalEnum.Test)}>Click me!</Button>
-			<AnimatePresence>
-				{modal === ModalEnum.Test && <ModalComponent {...args} onClose={closeModal} />}
-			</AnimatePresence>
+			<ModalComponent {...args} isOpen={modal === ModalEnum.Test} onClose={closeModal} />
 		</>
 	);
 };
