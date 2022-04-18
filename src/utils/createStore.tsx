@@ -11,7 +11,7 @@ export const createStore = <TStore extends Record<string, unknown>>(
 	name: string,
 	store: () => TStore,
 ): [FunctionComponent<Provider<TStore>>, () => TStore] => {
-	const StoreContext = createContext<TStore>({} as TStore);
+	const StoreContext = createContext<TStore | null>(null);
 
 	const StoreProvider = ({ children }: PropsWithChildren<unknown>): JSX.Element => {
 		const storeValue = store();
@@ -22,7 +22,7 @@ export const createStore = <TStore extends Record<string, unknown>>(
 	const useStore = (): TStore => {
 		const store = useContext(StoreContext);
 
-		if (Object.keys(store).length > 0) {
+		if (store) {
 			return store;
 		}
 
