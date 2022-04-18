@@ -27,13 +27,6 @@
 			"last 1 safari version"
 		]
 	},
-	"lint-staged": {
-		"**/*.{js,jsx,ts,tsx}": [
-			"yarn eslint ./src --ext .js,.jsx,.ts,.tsx --cache",
-			"yarn prettier -w",
-			"yarn test --watchAll=false --findRelatedTests --bail"
-		]
-	},
 	"devDependencies": {
 		"@storybook/addon-actions": "^6.4.19",
 		"@storybook/addon-docs": "^6.4.19",
