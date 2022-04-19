@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ComponentPropsWithoutRef, ReactNode } from 'react';
 import { ColorType } from '../../../styles/config/theme';
 import type { FontWeight, TextAlign, TextTransform } from '../../../styles/config/variables';
 
@@ -11,7 +11,7 @@ export enum HeadingType {
 	H6 = 'h6',
 }
 
-export interface HeadingProps {
+export interface HeadingProps extends ComponentPropsWithoutRef<'h1'> {
 	as?: HeadingType;
 	type?: HeadingType;
 	fontWeight?: FontWeight;

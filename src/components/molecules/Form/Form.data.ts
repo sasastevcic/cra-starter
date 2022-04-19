@@ -1,10 +1,8 @@
-import { ComponentProps } from 'react';
+import { ComponentPropsWithoutRef } from 'react';
 import { FieldValues, SubmitHandler, UseFormReturn } from 'react-hook-form';
 
-export type InputValue = Pick<ComponentProps<'input'>, 'value'>['value'];
-
 export interface FormProps<T extends FieldValues>
-	extends Omit<ComponentProps<'form'>, 'onSubmit' | 'ref'> {
+	extends Omit<ComponentPropsWithoutRef<'form'>, 'onSubmit'> {
 	form: UseFormReturn<T>;
 	onSubmit: SubmitHandler<T>;
 }

@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
+import { ComponentPropsWithoutRef, ReactNode } from 'react';
 
-export interface PageProps {
+export interface PageProps extends ComponentPropsWithoutRef<'div'> {
 	children: ReactNode;
 }

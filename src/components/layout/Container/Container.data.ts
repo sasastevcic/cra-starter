@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
+import { ComponentPropsWithRef, ReactNode } from 'react';
 
-export interface ContainerProps {
+export interface ContainerProps extends ComponentPropsWithRef<'div'> {
 	children: ReactNode;
 }

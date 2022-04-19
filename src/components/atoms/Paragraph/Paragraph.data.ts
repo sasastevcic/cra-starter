@@ -1,4 +1,4 @@
-import type { ReactNode, ElementType } from 'react';
+import type { ReactNode, ElementType, ComponentPropsWithoutRef } from 'react';
 import { ColorType } from '../../../styles/config/theme';
 import type { FontWeight, TextAlign, TextTransform } from '../../../styles/config/variables';
 
@@ -8,7 +8,7 @@ export enum ParagraphType {
 	Small = 'small',
 }
 
-export interface ParagraphProps {
+export interface ParagraphProps extends ComponentPropsWithoutRef<'p'> {
 	as?: ElementType;
 	type?: ParagraphType;
 	fontWeight?: FontWeight;

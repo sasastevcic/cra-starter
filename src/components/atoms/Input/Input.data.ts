@@ -1,6 +1,5 @@
-import { ComponentProps } from 'react';
+import { ComponentPropsWithoutRef } from 'react';
 
-export interface InputProps {
+export interface InputProps extends ComponentPropsWithoutRef<'input'> {
 	isInvalid: boolean;
-	type?: Pick<ComponentProps<'input'>, 'type'>['type'];
 }
