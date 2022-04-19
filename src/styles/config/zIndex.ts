@@ -1,4 +1,4 @@
-const map = ['null', 'default', 'tooltip', 'overlay'] as const;
+const layers = ['null', 'default', 'tooltip', 'overlay'] as const;
 
-export const zIndex = (name: typeof map[number] | 'negative'): number =>
-	map.findIndex((itemName) => itemName === name);
+export const zIndex = (name: typeof layers[number] | 'negative'): number =>
+	layers.findIndex((layer) => layer === name);
