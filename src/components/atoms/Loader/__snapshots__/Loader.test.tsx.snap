@@ -6,7 +6,7 @@ exports[`Loader should render correctly 1`] = `
   data-testid="Loader"
 >
   <svg
-    className="sc-gsnTZi Dpegn"
+    className="sc-gsnTZi ejwRbm"
     height={60}
     width={60}
   >

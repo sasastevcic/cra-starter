@@ -13,6 +13,7 @@ export const StyledLoader = styled.svg.attrs(() => ({
 	width: SIZE,
 	height: SIZE,
 }))`
+	cursor: progress;
 	animation: ${keyframes.rotate} 2s linear infinite;
 `;
 
