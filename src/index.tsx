@@ -7,7 +7,7 @@ import App from './components/App';
 import ErrorBoundary from './ErrorBoundary';
 import { GlobalStoreProvider } from './hooks/useGlobalStore';
 import reportWebVitals from './reportWebVitals';
-import { transition } from './styles/config/framer';
+import { getTransition } from './styles/config/framer';
 import { theme } from './styles/config/theme';
 import GlobalStyle from './styles/GlobalStyles';
 import { combineProviders } from './utils/combineProviders';
@@ -15,7 +15,7 @@ import { combineProviders } from './utils/combineProviders';
 const GlobalProviders = combineProviders([
 	[BrowserRouter],
 	[ThemeProvider, { theme }],
-	[MotionConfig, { transition }],
+	[MotionConfig, { transition: getTransition() }],
 	[GlobalStoreProvider],
 ]);
 

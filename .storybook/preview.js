@@ -5,7 +5,7 @@ import Page from '../src/components/layout/Page';
 import Container from '../src/components/layout/Container';
 import { Breakpoints } from '../src/styles/config/variables';
 import { MotionConfig } from 'framer-motion';
-import { transition } from '../src/styles/config/framer';
+import { getTransition } from '../src/styles/config/framer';
 
 const viewports = [
 	{
@@ -54,7 +54,7 @@ const viewports = [
 
 export const decorators = [
 	(Story) => (
-		<MotionConfig transition={transition}>
+		<MotionConfig transition={getTransition()}>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
 				<Page>

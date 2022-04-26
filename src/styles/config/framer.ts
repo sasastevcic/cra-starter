@@ -12,9 +12,13 @@ type AnimateType = (
 	exit?: VariantLabels,
 ) => MotionProps;
 
-export const transition: Transition = {
-	easings: TransitionEase.Default,
-	duration: 0.2,
+export const getTransition = (): Transition => {
+	const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+	return {
+		easings: TransitionEase.Default,
+		duration: reducedMotion ? 0 : 0.2,
+	};
 };
 
 export const variants: Record<TransitionType, Variants> = {
