@@ -5,7 +5,7 @@ type DerivedState = {
 	hasError: boolean;
 };
 
-class ErrorBoundary extends Component {
+class ErrorBoundary extends Component<{ children: ReactNode }> {
 	state = {
 		error: '',
 		hasError: false,

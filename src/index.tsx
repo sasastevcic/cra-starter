@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import { MotionConfig } from 'framer-motion';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import App from './components/App';
@@ -14,21 +15,25 @@ import { combineProviders } from './utils/combineProviders';
 
 const GlobalProviders = combineProviders([
 	[BrowserRouter],
+	// @ts-ignore
 	[ThemeProvider, { theme }],
 	[MotionConfig, { transition: getTransition() }],
 	[GlobalStoreProvider],
 ]);
 
-render(
+const container = document.getElementById('root') as HTMLElement;
+const root = createRoot(container);
+
+root.render(
 	<React.StrictMode>
 		<ErrorBoundary>
 			<GlobalProviders>
+				{/* @ts-ignore */}
 				<GlobalStyle />
 				<App />
 			</GlobalProviders>
 		</ErrorBoundary>
 	</React.StrictMode>,
-	document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

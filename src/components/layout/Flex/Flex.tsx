@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { forwardRef } from 'react';
 import { FlexProps } from './Flex.data';
 import { StyledFlex } from './Flex.styles';
@@ -20,6 +21,7 @@ export const Flex = forwardRef<Element, FlexProps>(
 		<StyledFlex
 			data-testid="Flex"
 			ref={ref}
+			// @ts-ignore
 			as={elementType}
 			$flexDirection={flexDirection}
 			$justifyContent={justifyContent}

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { forwardRef } from 'react';
 import { ParagraphProps, ParagraphType } from './Paragraph.data';
 import { StyledParagraph } from './Paragraph.styles';
@@ -19,6 +20,7 @@ export const Paragraph = forwardRef<HTMLParagraphElement, ParagraphProps>(
 		<StyledParagraph
 			data-testid="Paragraph"
 			ref={ref}
+			// @ts-ignore
 			as={as}
 			$type={type}
 			$fontWeight={fontWeight}
